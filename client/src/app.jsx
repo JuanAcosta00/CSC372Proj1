@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Introduction from './components/introduction.jsx';
 import ReactDOM from 'react-dom';
 
 function App(props) {
@@ -11,6 +12,7 @@ function App(props) {
         <div id='title'>CSC Project 1 PHP</div>
       </div>
       <div id='componentContainer'>
+        <Introduction/>
       </div>
     </div>
   );

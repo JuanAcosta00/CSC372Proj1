@@ -1,0 +1,18 @@
+html {
+  background-color: rgb(56, 56, 75) !important;
+  color: white;
+  font-family: "adobe-clean", sans-serif;
+  font-weight: lighter;
+}
+
+#pageHeader {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 100px;
+}
+
+#componentsContainer {
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 960px;
+}
