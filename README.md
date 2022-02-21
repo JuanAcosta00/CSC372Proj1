@@ -1,3 +1,1 @@
 # CSC372Proj1
-# CSC372Proj1
-# CSC372Proj1
