@@ -1,0 +1,16 @@
+<form>
+<h3> simple number guessing game to demo if conditions and $_GET</h3>
+<h4> the number is from 0 to 10000
+<input type="text" name="num">
+<button type="submit" name="submit" value="submit">Guess</button>
+</form>
+<?php
+  // correct answer is 1863
+  if (isset($_GET["submit"])) {
+    $n = $_GET["num"];
+    if ($n > 10000 || $n < 0) echo "<br>out of range<br>";
+    else if ($n > 1863) echo "<br>too high<br>";
+    else if ($n < 1863) echo "<br>too low<br>";
+    else echo "<br>you got it! <br>";
+  } else echo "<br>guess something<br>";
+?>

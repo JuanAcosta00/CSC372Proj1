@@ -1,0 +1,27 @@
+<?php
+  // data type demo
+  echo "data type demo<br><br>";
+  // 4 primitives: int float string boolean
+  $a = 3.14;
+  var_dump($a);
+  echo "<br>";
+  // Object and Array, object saved for later with class
+  echo "<br>indexed arrays: <br>";
+  $courses = array("CSC372", "CSC245", "CSC345");
+  var_dump($courses);
+  echo "<br>";
+  echo $courses[0]."<br>";
+  echo count($courses)."<br>";
+  echo "<br>associative arrays: <br>";
+  $majors = array("CS" => "Computer Science", "ECE" => "Electrical and Computer Engineering");
+  $majors["PHYS"] = "Physics";
+  var_dump($majors);
+  echo "<br>";
+  echo $majors["CS"]."<br>";
+  // multiple dimension array are also supported
+  //NULL
+  $a = null;
+  var_dump($a);
+  echo "<br>";
+  // a special data type: resource, to store external database
+?>

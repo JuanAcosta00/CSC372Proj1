@@ -1,0 +1,35 @@
+  <form>
+  <h3> dummy interaction to demo switch and $_GET</h3>
+  <h4> pick a color theme </h4>
+  <select name="color" >
+    <option disabled selected value></option>
+    <option>Silver & Green</option>
+    <option>Gold & Scarlet</option>
+    <option>Bronze & Blue</option>
+    <option>Black & Yellow</option>
+  </select>
+  <button type="select" name="select" value="select">Select</button>
+  </form>
+<?php
+  // correct answer is 1863
+  if (isset($_GET["select"])) {
+    $input = $_GET["color"];
+    switch($input) {
+      case null:
+        echo "<br>no input<br>";
+      break;
+      case "Silver & Green":
+        echo "<br>Slytherin!<br> ";
+      break;
+      case "Gold & Scarlet":
+        echo "<br>Gryffindor!<br> ";
+      break;
+      case "Bronze & Blue":
+        echo "<br>Ravenclaw!<br> ";
+      break;
+      case "Black & Yellow":
+        echo "<br>Hufflepuff!<br> ";
+      break;
+    }
+  }
+?>

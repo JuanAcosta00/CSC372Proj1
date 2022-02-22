@@ -1,0 +1,42 @@
+<?php
+  // simple factorial to demo loops and function
+  function factorial($x) {
+    $temp = 1;
+    for ($i = 2; $i <= $x; $i++) {
+      $temp = $temp * $i;
+    }
+    return $temp;
+  }
+  unset($a);
+  $a = 5;
+  echo factorial($a);
+
+  // constant demo
+  echo "<hr><br>constant demo<br>";
+  define("CSC", "Computer Science");
+  echo CSC."<br>";
+  const PI = 3.14;
+  echo PI."<br>";
+
+  echo "<br><hr><br>";
+
+  // class and object demo
+  echo "class and object <br>";
+
+  class Course {
+    public $major;
+    public $number;
+
+    public function __construct($major, $number) {
+      $this -> major = $major;
+      $this -> number = $number;
+    }
+
+    public function message() {
+      return "This course is ".$this -> major." ".$this -> number."<br>";
+    }
+  }
+
+  $myCourse = new Course("CSC", 372);
+  echo $myCourse -> message();
+?>

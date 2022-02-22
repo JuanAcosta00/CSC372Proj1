@@ -1,0 +1,9 @@
+<?php
+  // Error demo
+  echo "space saved for error demo<br>";
+  //echo 'hello world'
+  //echo 'hello world';
+
+  //Parse error: syntax error, unexpected token "echo", expecting "," or ";" in D:\Program
+  //Files\xampp\htdocs\CSC372Proj1\client\dist\index.php on line 17
+?>

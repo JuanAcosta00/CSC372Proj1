@@ -31,6 +31,9 @@ module.exports = {
         use: {
           loader: 'url-loader',
         }
+      },
+      { test: /\.txt$/,
+        use: 'raw-loader'
       }
     ]
   },

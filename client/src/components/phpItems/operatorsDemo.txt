@@ -1,0 +1,88 @@
+<?php
+  // operators demo
+  echo "logic and conditions demo<br>";
+  // nothing abnormal tho
+  echo "<br>arithmetic: <br>";
+  $a = 750;
+  $b = 20;
+  echo $a+$b."<br>";
+  echo $a-$b."<br>";
+  echo $a*$b."<br>";
+  echo $a/$b."<br>";
+  echo $a%$b."<br>";
+  echo $a**$b."<br>";
+  echo "<br>assignment: <br>";
+  $a = 750;
+  $b = 20;
+  echo $a." ".$b."<br>";
+  $a+=$b;
+  echo $a."<br>";
+  // b became 40 as well
+  echo $a." ".$b."<br>";
+  $b = 10;
+  echo $a." ".$b."<br>";
+  // both changes
+  // comparison operators
+  echo "<br>comparison: <br>";
+  // ==, !=, >, <, >=, <= are the normal ones
+  $a = 1;
+  $b = "1";
+  var_dump($a == $b); // this will return true
+  echo "<br>";
+  var_dump($a === $b);
+  echo "<br>";
+  var_dump($a <> $b);
+  echo "<br>";
+  var_dump($a !== $b);
+  echo "<br>";
+  echo ($a <=> $b); // return 0 if values are equal, -1 if $a < $b, 1 if $a > $b
+  echo "<br>";
+  // logical
+  echo "<br>logical: <br>";
+  // and, or, xor, &&, ||, !
+  // increment and decrement
+  echo "<br>increment and decrement: <br>";
+  // ++$a, $a++, --$a, $a--
+  // String
+  echo "<br>String: <br>";
+  //., .=
+  unset($b);
+  $a = "hello";
+  $b = "world<br>";
+  echo $a.$b;
+  $a.=$b;
+  echo $a;
+  // array
+  echo "<br>arrat: <br>";
+  //+, ==, ===, !=, <>, !==
+  unset($a);unset($b);
+  $a = array("a", "b");
+  $b = array("c"=>"C", "d"=>"D");
+  print_r($a + $b);
+  echo "<br>";
+  $a = array("a"=>"A", "b"=>"B");
+  $b = array("b"=>"B", "a"=>"A");
+  var_dump($a == $b);
+  echo "<br>";
+  var_dump($a === $b);
+  echo "<br>";
+  var_dump($a != $b);
+  echo "<br>";
+  var_dump($a <> $b);
+  echo "<br>";
+  var_dump($a !== $b);
+  echo "<br>";
+  // conditional assignment
+  echo "<br>conditional assignment: <br>";
+  //?:, ??
+  echo $status = (empty($user)) ? "anonymous" : "logged in";
+  echo "<br>";
+  $user = "a";
+  echo $status = (empty($user)) ? "anonymous" : "logged in";
+  echo "<br>";
+  echo $color = $color ?? "red";
+  echo "<br>";
+  $color = "blue";
+  echo $color = $color ?? "red";
+  echo "<br>";
+?>

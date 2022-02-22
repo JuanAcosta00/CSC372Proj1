@@ -1,0 +1,10 @@
+<?php
+
+  //syntax demo
+  echo "syntax demo<br><br>";
+  // Keywords are not case sensitive
+  echo "hello world<br>";
+  ECHO "hello world<br>";
+  EcHo "hello world<br>";
+
+?>

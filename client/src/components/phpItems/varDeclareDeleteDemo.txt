@@ -1,0 +1,36 @@
+<?php
+  //variable declare and delete demo
+  echo "variable declare and delete<br><br>";
+  //Variable can't start with number and is case sensitive
+  //must start with '$'
+  $a = 1;
+  echo "\$a = ".$a;
+  // delete variable
+  unset($a);
+  echo "\$a = ".$a;
+  //output variable with echo is pretty similar to bash script
+  echo "<br><br>";
+  $t = "hello";
+  echo "$t world!<br>";
+  echo "hi ".$t." world<br>";
+  // loosely typed
+  $t = 1;
+  echo "$t world!<br>";
+  $a = 'b';
+  $b = "test";
+  echo $a."<br>";
+  echo $$a."<br>";
+  // address
+  echo "<br>";
+  $a = 10;
+  $b = $a;
+  $b = 5;
+  echo "\$a = ".$a.", \$b = ".$b."<br>";
+  $a = "abc";
+  $b = &$a;
+  $b = "def";
+  echo "\$a = ".$a.", \$b = ".$b."<br>";
+  // and many predefined variable, start with a underscore
+  // like $_GET, $_POST, $_REQUEST
+  // don't know how to demo these
+?>
