@@ -38,7 +38,7 @@ function App(props) {
       </div>
         <Introduction/>
       <div id='componentContainer'>
-        <ErrorDemo file={ErrorDemoRaw}/>
+        {/* <ErrorDemo file={ErrorDemoRaw}/> */}
         <SyntaxDemo file={SyntaxDemoRaw}/>
         <VarDeclare file={VarDeclareRaw}/>
         <DataType file={DataTypeRaw}/>
